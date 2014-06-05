@@ -56,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Tastypie Signals'
-copyright = u'2014, Christopher D'Cunha'
+copyright = u'2014, Christopher D\'Cunha'
 
 # The version info for the project you're documenting, acts as replacement
 # for |version| and |release|, also used in various other places throughout
@@ -210,7 +210,7 @@ latex_elements = {
 latex_documents = [
     ('index', 'tastypie_signals.tex',
      u'Tastypie Signals Documentation',
-     u'Christopher D'Cunha', 'manual'),
+     u'Christopher D\'Cunha', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at
@@ -241,7 +241,7 @@ latex_documents = [
 man_pages = [
     ('index', 'tastypie_signals',
      u'Tastypie Signals Documentation',
-     [u'Christopher D'Cunha'], 1)
+     [u'Christopher D\'Cunha'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -256,7 +256,7 @@ man_pages = [
 texinfo_documents = [
     ('index', 'tastypie_signals',
      u'Tastypie Signals Documentation',
-     u'Christopher D'Cunha',
+     u'Christopher D\'Cunha',
      'tastypie_signals',
      'One line description of project.',
      'Miscellaneous'),
