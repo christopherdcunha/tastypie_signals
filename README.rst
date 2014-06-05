@@ -20,4 +20,6 @@ Tastypie Signals emits convenient django signals from your Tastypie resources.
 Features
 --------
 
-* TODO
+* Create custom signals
+* Create signalified tastypie resource mixin
+* Write tests
