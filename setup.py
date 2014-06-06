@@ -15,11 +15,13 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 requirements = [
-    # TODO: put package requirements here
+    'django>=1.5.1',
+    'django-tastypie>=0.10.0',
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
+    'django>=1.5.1',
+    'django-tastypie>=0.10.0',
 ]
 
 setup(

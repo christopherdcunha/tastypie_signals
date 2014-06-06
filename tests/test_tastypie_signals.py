@@ -9,20 +9,33 @@ Tests for `tastypie_signals` module.
 """
 
 import unittest
+from tastypie_signals import post_put_detail
 
-from tastypie_signals import tastypie_signals
 
+class TestSignals(unittest.TestCase):
 
-class TestTastypie_signals(unittest.TestCase):
+    resource = object()
+    request = object()
+
+    @staticmethod
+    def signal_handler(signal, sender, resource, request):
+        assert signal == post_put_detail
+        assert sender == TestSignals
+        assert resource == TestSignals.resource
+        assert request == TestSignals.request
 
     def setUp(self):
-        pass
+        post_put_detail.connect(
+            self.signal_handler,
+            sender=TestSignals
+        )
 
-    def test_something(self):
-        pass
-
-    def tearDown(self):
-        pass
+    def test_signal(self):
+        post_put_detail.send(
+            sender=self.__class__,
+            resource=self.resource,
+            request=self.request
+        )
 
 if __name__ == '__main__':
     unittest.main()
